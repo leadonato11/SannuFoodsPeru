@@ -1,0 +1,128 @@
+.navbar {
+  background-color: $typography_color;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.navbar-brand {
+  font-family: $secondary_typography;
+  font-size: 70px;
+  color: $background_color;
+  margin: 0;
+  padding: 8px;
+  &:hover {
+    color: $typography_color_hover;
+  }
+  @media (max-width: 576px) {
+    font-size: 35px;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    font-size: 35px;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 35px;
+  }
+}
+
+.nav-item {
+  border-top: 1px solid $background_color;
+  width: 70%;
+  .active {
+    color: $typography_color_hover;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    border: 0 !important;
+  }
+  @media (min-width: 1200px) and (max-width:2400px) {
+    border: 0 !important;
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid $background_color !important;
+  @media (min-width: 992px) and (max-width: 1200px) {
+    border: 0 !important;
+  }
+  @media (min-width: 1200px) and (max-width:2400px) {
+    border: 0 !important;
+  }
+}
+
+.nav-link {
+  font-family: $secondary_typography;
+  font-size: 24px;
+  color: $background_color;
+  &:hover {
+    color: $typography_color_hover;
+  }
+}
+
+.navbar-collapse {
+  justify-content: space-around;
+}
+
+.navbar-nav {
+  align-items: center;
+  padding: 0;
+  @media (max-width: 576px) {
+    padding: 30px 0;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    padding: 30px 0;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    padding: 30px 0;
+  }
+}
+
+.nav-item {
+  margin: 0 50px;
+}
+
+.navbar-toggler {
+  border: 0;
+  &:hover {
+    border: 0;
+  }
+}
+
+.barsFormat {
+  font-size: 30px;
+  color: $background_color;
+}
+
+.hidden-lg {
+  display: none;
+  @media (max-width: 576px) {
+    display: inline-block;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    display: inline-block;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    display: inline-block;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.hidden-mobile {
+  display: inline-block;
+  .navbar-brand .itemMobile {
+    font-size: 35px;
+  }
+  @media (max-width: 576px) {
+    display: none;
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    display: none;
+  }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    display: inline-block;
+  }
+}

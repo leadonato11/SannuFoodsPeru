@@ -1,0 +1,430 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #B8C8AB; }
+
+.row {
+  margin: 0; }
+  .row > * {
+    padding: 0; }
+
+@font-face {
+  font-family: "zaio";
+  src: url(../font/Zaio.woff) format("woff"); }
+
+.bt__whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999; }
+  @media (max-width: 400px) {
+    .bt__whatsapp {
+      display: block;
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      border-radius: 50%;
+      line-height: 80px;
+      text-align: center;
+      z-index: 999; } }
+  .bt__whatsapp .bt__whatsappIcon {
+    width: 80%; }
+    @media (max-width: 400px) {
+      .bt__whatsapp .bt__whatsappIcon {
+        width: 50%; } }
+
+.btnSannu {
+  font-family: "Poppins", sans-serif;
+  color: #7C9875;
+  background-color: #F9E5D4;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 5px 5px 19px 5px rgba(0, 0, 0, 0.2);
+  font-size: 15px; }
+  .btnSannu:not(.disableHover):hover {
+    color: #F9E5D4;
+    background-color: #7C9875; }
+  .btnSannu .btn__link {
+    text-decoration: none;
+    color: inherit; }
+    .btnSannu .btn__link:hover {
+      color: inherit; }
+    .btnSannu .btn__link:visited {
+      color: inherit; }
+
+.btnSannu--bigBtn {
+  width: 201px;
+  height: 53px; }
+
+.btnSannu__smallBtn {
+  width: 126px;
+  height: 33px; }
+
+.btnSannu--disable {
+  background-color: rgba(253, 229, 210, 0.38);
+  filter: brightness(0.5);
+  color: #949494; }
+  .btnSannu--disable:hover {
+    cursor: not-allowed; }
+
+.footer {
+  width: 100%;
+  height: 70px;
+  background-color: #033A3D;
+  padding: 20px; }
+  .footer .footer__logo {
+    padding-right: 10px;
+    font-family: "zaio";
+    font-size: 30px;
+    color: #B8C8AB;
+    line-height: 40px;
+    text-decoration: none; }
+    .footer .footer__logo:hover {
+      color: #F9E5D4;
+      text-decoration: none; }
+  .footer .footer__iconosRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    font-size: 25px;
+    margin: 0px;
+    padding: 0px; }
+    .footer .footer__iconosRedes .footer__redes,
+    .footer .footer__iconosRedes .footer__mail {
+      color: #B8C8AB;
+      padding: 0.3em;
+      line-height: 0;
+      text-decoration: none; }
+      .footer .footer__iconosRedes .footer__redes:hover,
+      .footer .footer__iconosRedes .footer__mail:hover {
+        text-decoration: none;
+        color: #F9E5D4; }
+    .footer .footer__iconosRedes .footer__mail {
+      padding-left: 10px;
+      font-size: 15px;
+      line-height: 35px; }
+      @media (max-width: 400px) {
+        .footer .footer__iconosRedes .footer__mail {
+          padding-left: 5px;
+          font-size: 12px;
+          line-height: 35px; } }
+
+.navbar {
+  background-color: #033A3D;
+  display: flex;
+  align-items: center;
+  padding: 0; }
+
+.navbar-brand {
+  font-family: "zaio";
+  font-size: 70px;
+  color: #B8C8AB;
+  margin: 0;
+  padding: 8px; }
+  .navbar-brand:hover {
+    color: #F9E5D4; }
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 35px; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .navbar-brand {
+      font-size: 35px; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-brand {
+      font-size: 35px; } }
+
+.nav-item {
+  border-top: 1px solid #B8C8AB;
+  width: 70%; }
+  .nav-item .active {
+    color: #F9E5D4; }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .nav-item {
+      border: 0 !important; } }
+  @media (min-width: 1200px) and (max-width: 2400px) {
+    .nav-item {
+      border: 0 !important; } }
+
+.border-bottom {
+  border-bottom: 1px solid #B8C8AB !important; }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .border-bottom {
+      border: 0 !important; } }
+  @media (min-width: 1200px) and (max-width: 2400px) {
+    .border-bottom {
+      border: 0 !important; } }
+
+.nav-link {
+  font-family: "zaio";
+  font-size: 24px;
+  color: #B8C8AB; }
+  .nav-link:hover {
+    color: #F9E5D4; }
+
+.navbar-collapse {
+  justify-content: space-around; }
+
+.navbar-nav {
+  align-items: center;
+  padding: 0; }
+  @media (max-width: 576px) {
+    .navbar-nav {
+      padding: 30px 0; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .navbar-nav {
+      padding: 30px 0; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .navbar-nav {
+      padding: 30px 0; } }
+
+.nav-item {
+  margin: 0 50px; }
+
+.navbar-toggler {
+  border: 0; }
+  .navbar-toggler:hover {
+    border: 0; }
+
+.barsFormat {
+  font-size: 30px;
+  color: #B8C8AB; }
+
+.hidden-lg {
+  display: none; }
+  @media (max-width: 576px) {
+    .hidden-lg {
+      display: inline-block; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .hidden-lg {
+      display: inline-block; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .hidden-lg {
+      display: inline-block; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .hidden-lg {
+      display: none; } }
+
+.hidden-mobile {
+  display: inline-block; }
+  .hidden-mobile .navbar-brand .itemMobile {
+    font-size: 35px; }
+  @media (max-width: 576px) {
+    .hidden-mobile {
+      display: none; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .hidden-mobile {
+      display: none; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .hidden-mobile {
+      display: none; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .hidden-mobile {
+      display: inline-block; } }
+
+.index__imgBackground .index__imgText {
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #F9E5D4;
+  font-family: "Poppins", sans-serif; }
+  @media (max-width: 576px) {
+    .index__imgBackground .index__imgText {
+      font-size: 20px;
+      top: 20%; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .index__imgBackground .index__imgText {
+      font-size: 30px;
+      top: 25%; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .index__imgBackground .index__imgText {
+      font-size: 40px;
+      top: 35%; } }
+
+.index__imgBackground .img__index {
+  background-color: rgba(0, 0, 0, 0.8);
+  filter: brightness(0.3); }
+
+.index__imgBackground .index__imgTextSub {
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #F9E5D4;
+  font-family: "Poppins", sans-serif; }
+  @media (max-width: 576px) {
+    .index__imgBackground .index__imgTextSub {
+      font-size: 12px;
+      top: 26%; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .index__imgBackground .index__imgTextSub {
+      font-size: 15px;
+      top: 32%; } }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .index__imgBackground .index__imgTextSub {
+      font-size: 20px;
+      top: 43%; } }
+  @media (min-width: 992px) and (max-width: 1200px) {
+    .index__imgBackground .index__imgTextSub {
+      font-size: 19px;
+      top: 57%; } }
+
+.paragraph {
+  background-color: #B8C8AB;
+  color: #033A3D;
+  min-height: 300px; }
+  .paragraph .paragraph__we {
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0; }
+    @media (max-width: 500px) {
+      .paragraph .paragraph__we {
+        text-align: left;
+        font-size: 15px; } }
+
+.paragraph__sannuDivision {
+  background-color: #7C9875; }
+  .paragraph__sannuDivision .paragraph__sannu {
+    font-family: "zaio";
+    color: #033A3D;
+    font-size: 60px;
+    margin: 0;
+    padding: 0; }
+    @media (max-width: 500px) {
+      .paragraph__sannuDivision .paragraph__sannu {
+        font-size: 40px; } }
+
+.products {
+  background-color: #B8C8AB;
+  min-height: 200px; }
+  .products .products__imgDiv {
+    margin: 0;
+    text-align: center; }
+    .products .products__imgDiv .products__img {
+      width: 80%;
+      border-radius: 15px;
+      text-align: center; }
+      @media (max-width: 500px) {
+        .products .products__imgDiv .products__img {
+          width: 90%; } }
+    .products .products__imgDiv .product__name {
+      font-family: "Poppins", sans-serif;
+      color: #033A3D;
+      margin-top: 15px;
+      font-weight: bold; }
+  .products .btn__big {
+    font-family: "Poppins", sans-serif;
+    width: 201px;
+    height: 53px;
+    font-size: 15px;
+    color: #7C9875;
+    background-color: #F9E5D4;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 5px 5px 19px 5px rgba(0, 0, 0, 0.2); }
+    .products .btn__big:hover {
+      color: #F9E5D4;
+      background-color: #7C9875; }
+
+.main__nosotros {
+  margin-top: 50px; }
+
+.sannuDivider {
+  background-color: #7C9875;
+  color: #033A3D;
+  font-family: "zaio";
+  text-align: center;
+  padding: 10px; }
+  .sannuDivider .sannuDivider--tituloSectionProduct {
+    margin: 0;
+    font-size: 40px; }
+
+.imgInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .imgInfo .imgProductos {
+    width: 600px; }
+    @media (max-width: 576px) {
+      .imgInfo .imgProductos {
+        width: auto;
+        transform: translateX(10px); } }
+    @media (min-width: 576px) and (max-width: 768px) {
+      .imgInfo .imgProductos {
+        width: auto;
+        transform: translateX(-45px); } }
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .productInfo .mantequillas__descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.sannuTitulos {
+  font-family: "zaio";
+  color: #033A3D;
+  margin: 0px;
+  font-weight: bold;
+  text-align: center; }
+
+.sannuTitulos--productName {
+  font-size: 40px;
+  font-weight: normal; }
+
+.sannuTitulos--productModal {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 10px; }
+
+.sannuInfo {
+  font-family: "Poppins", sans-serif;
+  color: #033A3D;
+  text-align: center;
+  margin: 0;
+  padding: 50px 140px;
+  font-size: 20px; }
+  @media (max-width: 576px) {
+    .sannuInfo {
+      padding: 30px; } }
+  @media (min-width: 576px) and (max-width: 768px) {
+    .sannuInfo {
+      padding: 50px; } }
+
+.sannuInfo--productModal {
+  padding: 20px; }
+
+.itemsMotivos {
+  padding: 5px; }
+
+.mantequilla__producto {
+  border-bottom: 2px solid #7C9875; }
+
+.modal-content {
+  background-color: #fde5d2;
+  border-radius: 20px; }
+  .modal-content .modal-body {
+    padding: 20px 50px 50px 50px; }
+
+.hrSannuModalDivider {
+  border: 2px solid #7C9875; }

@@ -1,0 +1,75 @@
+.bt__whatsapp {
+  display: block;
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+  @media (max-width: 400px) {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+  }
+  .bt__whatsappIcon {
+    width: 80%;
+    @media (max-width: 400px) {
+      width: 50%;
+    }
+  }
+}
+
+.btnSannu {
+  font-family: $principal_typography;
+  color: $background_color_secundary;
+  background-color: $typography_color_hover;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 5px 5px 19px 5px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  &:not(.disableHover):hover {
+    color: $typography_color_hover;
+    background-color: $background_color_secundary;
+  }
+  .btn__link {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: inherit;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
+}
+
+.btnSannu--bigBtn {
+  width: 201px;
+  height: 53px;
+}
+
+.btnSannu__smallBtn {
+  width: 126px;
+  height: 33px;
+}
+
+.btnSannu--disable {
+  background-color: rgba(#FDE5D2,0.38);
+  filter: brightness(0.5);
+  color: #949494;
+  &:hover {
+    cursor: not-allowed;
+  }
+}
