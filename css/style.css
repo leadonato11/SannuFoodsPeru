@@ -11,6 +11,9 @@ body {
   .row > * {
     padding: 0; }
 
+*:focus {
+  outline: none; }
+
 @font-face {
   font-family: "zaio";
   src: url(../font/Zaio.woff) format("woff"); }
@@ -428,3 +431,63 @@ body {
 
 .hrSannuModalDivider {
   border: 2px solid #7C9875; }
+
+.main__contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 593px; }
+  .main__contacto .container__contacto {
+    justify-content: space-between;
+    width: 100%; }
+  .main__contacto .form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .main__contacto .form__container .contact__text {
+      text-align: center; }
+    .main__contacto .form__container .sannuTitulos--contactInfo {
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      width: 100%;
+      margin: 5px 0; }
+    .main__contacto .form__container .socialMedia__Icons {
+      font-size: 55px; }
+      .main__contacto .form__container .socialMedia__Icons a {
+        color: #fff; }
+        .main__contacto .form__container .socialMedia__Icons a:hover {
+          color: #7c9875; }
+    .main__contacto .form__container .form {
+      padding: 10px;
+      text-align: center; }
+      .main__contacto .form__container .form .inputNameAndEmail {
+        width: 437px; }
+        .main__contacto .form__container .form .inputNameAndEmail .input__singleBox {
+          width: 100%;
+          border-radius: 10px;
+          margin: 5px 0;
+          padding: 20px;
+          border: 0;
+          height: 40px; }
+        .main__contacto .form__container .form .inputNameAndEmail input:focus,
+        .main__contacto .form__container .form .inputNameAndEmail textarea:focus {
+          outline: none; }
+      .main__contacto .form__container .form .inputTextArea {
+        width: 437px; }
+        .main__contacto .form__container .form .inputTextArea .input__textAreaBox {
+          width: 100%;
+          border-radius: 10px;
+          margin: 5px 0;
+          height: 120px;
+          padding: 20px;
+          border: 0; }
+      .main__contacto .form__container .form .submitBtn {
+        text-align: end; }
+  .main__contacto .location {
+    display: flex;
+    justify-content: center;
+    width: auto; }
+    .main__contacto .location .peruLimaMap {
+      width: 710px; }

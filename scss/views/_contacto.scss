@@ -1,123 +1,76 @@
-.mapa__img {
+.main__contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 593px;
+  .container__contacto {
+    justify-content: space-between;
     width: 100%;
-    top: 0;
-}
-
-.contact {
-    background-color: #B8C8AB;
-    /*para probar*/
-    min-height: 1000px;
-    display: inline-block;
-    position: relative;
-}
-
-
-/*ESTILOS PARA EL FORMULARIO DESKTOP AND MOBILE*/
-
-@font-face {
-    font-family: "zaio";
-    src: url(../font/Zaio.woff) format("woff");
-}
-
-.contact__text {
-    font-family: "Poppins", sans-serif;
-    color: #033A3D;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px;
-}
-
-@media (max-width: 500px) {
+  }
+  .form__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .contact__text {
-        font-size: 15px;
+      text-align: center;
     }
-}
-
-.footer__iconosRedes__contacto {
-    color: #fff;
-    padding: 0.3em;
-    font-size: 55px;
-    margin: 3px 3px;
-}
-
-@media (max-width: 500px) {
-    .footer__iconosRedes__contacto {
-        font-size: 35px;
+    .sannuTitulos--contactInfo {
+      font-size: 30px;
+      font-weight: normal;
+      text-align: center;
+      width: 100%;
+      margin: 5px 0;
     }
-}
-
-.footer__iconosRedes__contacto:hover {
-    color: #7C9875;
-}
-
-.formulario__contacto {
-    border-radius: 1em;
-    width: 437px;
-    height: 40px;
-}
-
-@media (max-width: 500px) {
-    .formulario__contacto {
-        width: 350px;
-        height: 40px;
+    .socialMedia__Icons {
+      font-size: 55px;
+      a {
+        color: #fff;
+        &:hover {
+          color: #7c9875;
+        }
+      }
     }
-}
-
-.formulario__contacto__textArea {
-    border-radius: 1em;
-    border: none;
-    resize: none;
-    width: 437px;
-    height: 120px;
-    padding: 10px;
-}
-
-@media (max-width: 500px) {
-    .formulario__contacto__textArea {
-        width: 350px;
+    .form {
+      padding: 10px;
+      text-align: center;
+      .inputNameAndEmail {
+        width: 437px;
+        .input__singleBox {
+          width: 100%;
+          border-radius: 10px;
+          margin: 5px 0;
+          padding: 20px;
+          border: 0;
+          height: 40px;
+        }
+        input:focus,
+        textarea:focus {
+          outline: none;
+        }
+      }
+      .inputTextArea {
+        width: 437px;
+        .input__textAreaBox {
+          width: 100%;
+          border-radius: 10px;
+          margin: 5px 0;
+          height: 120px;
+          padding: 20px;
+          border: 0;
+        }
+      }
+      .submitBtn {
+        text-align: end;
+      }
     }
-}
-
-button {
-    font-family: "Poppins", sans-serif;
-    width: 126px;
-    height: 33px;
-    margin-right: 165px;
-    font-size: 15px;
-    color: #7C9875;
-    background-color: #F9E5D4;
-    border-radius: 1em;
-    border: none;
-    box-shadow: 5px 5px 19px 5px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-}
-
-@media (max-width: 500px) {
-    button {
-        margin-right: 20px;
+  }
+  .location {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    .peruLimaMap {
+      width: 710px;
     }
-}
-
-@media (min-width: 2000px) {
-    button {
-        margin-right: 265px;
-    }
-}
-
-button:hover {
-    color: #F9E5D4;
-    background-color: #7C9875;
-}
-
-@media (max-width:800px) {
-    .div__img {
-        float: none;
-        position: absolute;
-        top: 550px;
-    }
-    .div__contacto {
-        float: none;
-        position: absolute;
-        top: 50px;
-    }
+  }
 }
