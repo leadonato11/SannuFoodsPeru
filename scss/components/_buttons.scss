@@ -68,8 +68,9 @@
 .btnSannu--disable {
   background-color: rgba(#FDE5D2,0.38);
   filter: brightness(0.5);
-  color: #949494;
-  &:hover {
-    cursor: not-allowed;
-  }
+  color: $typography_color_error;
+  font-weight: 300;
+  background-color: none;
+  cursor: not-allowed;
+  pointer-events: none;
 }

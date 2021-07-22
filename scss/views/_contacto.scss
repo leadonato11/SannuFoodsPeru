@@ -1,7 +1,7 @@
 .main__contacto {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 593px;
   .container__contacto {
     justify-content: space-between;
@@ -31,46 +31,119 @@
         }
       }
     }
+
     .form {
       padding: 10px;
       text-align: center;
+
       .inputNameAndEmail {
         width: 437px;
+
         .input__singleBox {
           width: 100%;
           border-radius: 10px;
           margin: 5px 0;
-          padding: 20px;
+          padding: 10px;
           border: 0;
           height: 40px;
+          &::placeholder {
+            color: $background_color;
+            opacity: 1;
+            font-size: 14px;
+            font-family: $principal_typography;
+            font-weight: 300;
+          }
         }
+
         input:focus,
         textarea:focus {
           outline: none;
         }
+
+        .errorValidation {
+          border: 2px solid red;
+          &::placeholder {
+            color: red !important;
+          }
+        }
       }
+
       .inputTextArea {
         width: 437px;
+
         .input__textAreaBox {
           width: 100%;
           border-radius: 10px;
           margin: 5px 0;
           height: 120px;
-          padding: 20px;
+          padding: 10px;
           border: 0;
+          font-size: 15px;
+          font-family: $principal_typography;
+          font-weight: 300;
+          &::placeholder {
+            color: $background_color;
+            opacity: 1;
+            font-size: 14px;
+            font-family: $principal_typography;
+            font-weight: 300;
+          }
         }
       }
       .submitBtn {
-        text-align: end;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .error {
+          font-size: 15px;
+          font-weight: 300;
+          font-family: $principal_typography;
+          opacity: 1;
+          color: $typography_color_error;
+          .errorMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 299px;
+            height: 33px;
+            background-color: $background_color_error;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
+        .success {
+          font-size: 15px;
+          font-weight: 300;
+          font-family: $principal_typography;
+          opacity: 1;
+          color: $typography_color_success;
+          .successMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 299px;
+            height: 33px;
+            background-color: $background_color_success;
+          }
+          p {
+            margin-bottom: 0;
+          }
+        }
       }
     }
-  }
-  .location {
-    display: flex;
-    justify-content: center;
-    width: auto;
-    .peruLimaMap {
-      width: 710px;
+    .inputs--disable {
+      background-color: $background_color_formDisable;
+      color: $typography_color_formDisable;
+      font-weight: 300;
+      background-color: none;
+      cursor: not-allowed;
+      pointer-events: none;
     }
+  }
+  .peruLimaMap {
+    width: 710px;
   }
 }

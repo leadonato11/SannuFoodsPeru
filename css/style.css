@@ -79,9 +79,11 @@ body {
 .btnSannu--disable {
   background-color: rgba(253, 229, 210, 0.38);
   filter: brightness(0.5);
-  color: #949494; }
-  .btnSannu--disable:hover {
-    cursor: not-allowed; }
+  color: #FDE5D2;
+  font-weight: 300;
+  background-color: none;
+  cursor: not-allowed;
+  pointer-events: none; }
 
 .footer {
   width: 100%;
@@ -435,7 +437,7 @@ body {
 .main__contacto {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 593px; }
   .main__contacto .container__contacto {
     justify-content: space-between;
@@ -468,12 +470,22 @@ body {
           width: 100%;
           border-radius: 10px;
           margin: 5px 0;
-          padding: 20px;
+          padding: 10px;
           border: 0;
           height: 40px; }
+          .main__contacto .form__container .form .inputNameAndEmail .input__singleBox::placeholder {
+            color: #B8C8AB;
+            opacity: 1;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300; }
         .main__contacto .form__container .form .inputNameAndEmail input:focus,
         .main__contacto .form__container .form .inputNameAndEmail textarea:focus {
           outline: none; }
+        .main__contacto .form__container .form .inputNameAndEmail .errorValidation {
+          border: 2px solid red; }
+          .main__contacto .form__container .form .inputNameAndEmail .errorValidation::placeholder {
+            color: red !important; }
       .main__contacto .form__container .form .inputTextArea {
         width: 437px; }
         .main__contacto .form__container .form .inputTextArea .input__textAreaBox {
@@ -481,13 +493,59 @@ body {
           border-radius: 10px;
           margin: 5px 0;
           height: 120px;
-          padding: 20px;
-          border: 0; }
+          padding: 10px;
+          border: 0;
+          font-size: 15px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 300; }
+          .main__contacto .form__container .form .inputTextArea .input__textAreaBox::placeholder {
+            color: #B8C8AB;
+            opacity: 1;
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300; }
       .main__contacto .form__container .form .submitBtn {
-        text-align: end; }
-  .main__contacto .location {
-    display: flex;
-    justify-content: center;
-    width: auto; }
-    .main__contacto .location .peruLimaMap {
-      width: 710px; }
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .main__contacto .form__container .form .submitBtn .error {
+          font-size: 15px;
+          font-weight: 300;
+          font-family: "Poppins", sans-serif;
+          opacity: 1;
+          color: #FDE5D2; }
+          .main__contacto .form__container .form .submitBtn .error .errorMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 299px;
+            height: 33px;
+            background-color: #FC4242; }
+          .main__contacto .form__container .form .submitBtn .error p {
+            margin-bottom: 0; }
+        .main__contacto .form__container .form .submitBtn .success {
+          font-size: 15px;
+          font-weight: 300;
+          font-family: "Poppins", sans-serif;
+          opacity: 1;
+          color: #FDE5D2; }
+          .main__contacto .form__container .form .submitBtn .success .successMessage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 299px;
+            height: 33px;
+            background-color: #7C9875; }
+          .main__contacto .form__container .form .submitBtn .success p {
+            margin-bottom: 0; }
+    .main__contacto .form__container .inputs--disable {
+      background-color: #E9E9E9;
+      color: #033A3D;
+      font-weight: 300;
+      background-color: none;
+      cursor: not-allowed;
+      pointer-events: none; }
+  .main__contacto .peruLimaMap {
+    width: 710px; }
