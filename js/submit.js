@@ -11,29 +11,28 @@ const messageInput = document.getElementById("message");
 }; */
 
 btnSubmit.addEventListener("click", (event) => {
-  event.preventDefault();
-  validarForm();
+    event.preventDefault();
+    validarForm();
 });
 
+
+
 emailValue.addEventListener("change", (event) => {
-
-
-
-  if (event.target.value === "") {
-    button.disabled = true; //button remains disabled
-    showErrorSection();
-  } else {
-    button.disabled = false; //button is enabled
-  }
+    if (event.target.value === "") {
+        button.disabled = true; //button remains disabled
+        showErrorSection();
+    } else {
+        button.disabled = false; //button is enabled
+    }
 });
 
 function validarForm() {
-  
+
 }
 
 function showErrorSection() {
-  $("#email").addClass("errorValidation");
-  $("#btnSubmit").addClass("btnSannu--disable");
-  $("#errorSection").fadeIn();
-  $("#emailErrorMessage").fadeIn("slow");
+    $("#email").addClass("errorValidation");
+    $("#btnSubmit").addClass("btnSannu--disable");
+    $("#errorSection").fadeIn();
+    $("#emailErrorMessage").fadeIn("slow");
 }
