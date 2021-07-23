@@ -442,6 +442,29 @@ body {
   .main__contacto .container__contacto {
     justify-content: space-between;
     width: 100%; }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .main__contacto .container__contacto .mapSection {
+        overflow: hidden; } }
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .main__contacto .container__contacto .mapSection {
+        overflow: hidden; } }
+    @media (min-width: 1400px) {
+      .main__contacto .container__contacto .mapSection {
+        overflow: hidden;
+        max-height: 762px; } }
+    @media (max-width: 576px) {
+      .main__contacto .container__contacto {
+        display: flex;
+        flex-direction: column-reverse; } }
+    @media (min-width: 576px) and (max-width: 768px) {
+      .main__contacto .container__contacto {
+        flex-direction: column-reverse; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .main__contacto .container__contacto {
+        flex-direction: column-reverse; } }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .main__contacto .container__contacto {
+        flex-direction: row; } }
   .main__contacto .form__container {
     display: flex;
     justify-content: center;
@@ -449,6 +472,9 @@ body {
     flex-direction: column; }
     .main__contacto .form__container .contact__text {
       text-align: center; }
+      @media (max-width: 576px) {
+        .main__contacto .form__container .contact__text {
+          padding: 10px 30px; } }
     .main__contacto .form__container .sannuTitulos--contactInfo {
       font-size: 30px;
       font-weight: normal;
@@ -462,8 +488,13 @@ body {
         .main__contacto .form__container .socialMedia__Icons a:hover {
           color: #7c9875; }
     .main__contacto .form__container .form {
-      padding: 10px;
-      text-align: center; }
+      padding: 10px; }
+      .main__contacto .form__container .form input,
+      .main__contacto .form__container .form textarea {
+        color: #033A3D;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 14px; }
       .main__contacto .form__container .form .inputNameAndEmail {
         width: 437px; }
         .main__contacto .form__container .form .inputNameAndEmail .input__singleBox {
@@ -483,9 +514,13 @@ body {
         .main__contacto .form__container .form .inputNameAndEmail textarea:focus {
           outline: none; }
         .main__contacto .form__container .form .inputNameAndEmail .errorValidation {
-          border: 2px solid red; }
+          border: 2px solid red;
+          color: #FC4242; }
           .main__contacto .form__container .form .inputNameAndEmail .errorValidation::placeholder {
             color: red !important; }
+        @media (max-width: 576px) {
+          .main__contacto .form__container .form .inputNameAndEmail {
+            width: 100%; } }
       .main__contacto .form__container .form .inputTextArea {
         width: 437px; }
         .main__contacto .form__container .form .inputTextArea .input__textAreaBox {
@@ -497,16 +532,20 @@ body {
           border: 0;
           font-size: 15px;
           font-family: "Poppins", sans-serif;
-          font-weight: 300; }
+          font-weight: 300;
+          resize: none; }
           .main__contacto .form__container .form .inputTextArea .input__textAreaBox::placeholder {
             color: #B8C8AB;
             opacity: 1;
             font-size: 14px;
             font-family: "Poppins", sans-serif;
             font-weight: 300; }
+        @media (max-width: 576px) {
+          .main__contacto .form__container .form .inputTextArea {
+            width: 100%; } }
       .main__contacto .form__container .form .submitBtn {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center; }
         .main__contacto .form__container .form .submitBtn .error {
           font-size: 15px;
@@ -522,8 +561,15 @@ body {
             width: 299px;
             height: 33px;
             background-color: #FC4242; }
+            @media (max-width: 576px) {
+              .main__contacto .form__container .form .submitBtn .error .errorMessage {
+                width: auto; } }
           .main__contacto .form__container .form .submitBtn .error p {
-            margin-bottom: 0; }
+            margin: 0; }
+          @media (max-width: 576px) {
+            .main__contacto .form__container .form .submitBtn .error {
+              margin-bottom: 10px;
+              width: 100%; } }
         .main__contacto .form__container .form .submitBtn .success {
           font-size: 15px;
           font-weight: 300;
@@ -538,8 +584,51 @@ body {
             width: 299px;
             height: 33px;
             background-color: #7C9875; }
+            @media (max-width: 576px) {
+              .main__contacto .form__container .form .submitBtn .success .successMessage {
+                width: auto; } }
+            @media (min-width: 576px) and (max-width: 768px) {
+              .main__contacto .form__container .form .submitBtn .success .successMessage {
+                width: auto; } }
+            @media (min-width: 768px) and (max-width: 992px) {
+              .main__contacto .form__container .form .submitBtn .success .successMessage {
+                width: auto; } }
           .main__contacto .form__container .form .submitBtn .success p {
             margin-bottom: 0; }
+          @media (max-width: 576px) {
+            .main__contacto .form__container .form .submitBtn .success {
+              margin-bottom: 10px;
+              width: 100%; } }
+          @media (min-width: 576px) and (max-width: 768px) {
+            .main__contacto .form__container .form .submitBtn .success {
+              margin-bottom: 10px;
+              width: 100%; } }
+          @media (min-width: 768px) and (max-width: 992px) {
+            .main__contacto .form__container .form .submitBtn .success {
+              margin-bottom: 10px;
+              width: 100%; } }
+        @media (max-width: 576px) {
+          .main__contacto .form__container .form .submitBtn {
+            flex-direction: column;
+            margin: 10px 0; } }
+        @media (min-width: 576px) and (max-width: 768px) {
+          .main__contacto .form__container .form .submitBtn {
+            flex-direction: column;
+            margin: 10px 0; } }
+        @media (min-width: 768px) and (max-width: 992px) {
+          .main__contacto .form__container .form .submitBtn {
+            flex-direction: column;
+            margin: 10px 0; } }
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          .main__contacto .form__container .form .submitBtn {
+            justify-content: space-between; } }
+        @media (min-width: 1400px) {
+          .main__contacto .form__container .form .submitBtn {
+            justify-content: space-between; } }
+      @media (max-width: 576px) {
+        .main__contacto .form__container .form {
+          width: 100%;
+          padding: 10px 30px; } }
     .main__contacto .form__container .inputs--disable {
       background-color: #E9E9E9;
       color: #033A3D;
@@ -547,5 +636,27 @@ body {
       background-color: none;
       cursor: not-allowed;
       pointer-events: none; }
+    @media (max-width: 576px) {
+      .main__contacto .form__container {
+        margin-bottom: 20px; } }
   .main__contacto .peruLimaMap {
     width: 710px; }
+    @media (max-width: 576px) {
+      .main__contacto .peruLimaMap {
+        width: 100%; } }
+    @media (min-width: 576px) and (max-width: 768px) {
+      .main__contacto .peruLimaMap {
+        width: 100%; } }
+    @media (min-width: 768px) and (max-width: 992px) {
+      .main__contacto .peruLimaMap {
+        width: 100%; } }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      .main__contacto .peruLimaMap {
+        width: 710px;
+        transform: translateX(-50px); } }
+    @media (min-width: 1400px) {
+      .main__contacto .peruLimaMap {
+        width: 100%; } }
+
+@media (max-width: 576px) {
+  width: 100%; }

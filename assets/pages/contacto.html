@@ -24,7 +24,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand hidden-lg" href="../../index.html">SANNU</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileMenu">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars barsFormat"></i>
       </button>
       <div class="collapse navbar-collapse" id="mobileMenu">
@@ -53,11 +53,11 @@
   <!-- Contact section -->
   <main class="main__contacto">
     <div class="row container__contacto">
-      <section class="col-lg-6 col-md-6 col-xs-12">
+      <section class="col-lg-6 col-md-12 col-xs-12 mapSection">
         <img src="../image/mapalimaperu.png" alt="Lima, Perú" class="peruLimaMap">
       </section>
 
-      <section class="col-lg-6 col-md-6 col-xs-12 form__container">
+      <section class="col-lg-6 col-md-12 col-xs-12 form__container">
         <div class="contact__text">
           <p class="sannuTitulos sannuTitulos--contactInfo">ENCONTRANOS EN REDES SOCIALES</p>
           <div class="socialMedia__Icons">
@@ -71,7 +71,7 @@
         <!-- Formulario -->
         <div class="form">
           <form id="form">
-            
+
             <div class="inputNameAndEmail">
               <input class="input__singleBox" id="nombre" type="text" placeholder="Nombre*">
               <input class="input__singleBox" id="email" type="email" placeholder="Mail*">
@@ -80,23 +80,27 @@
               <textarea class="input__textAreaBox" id="message" cols="30" rows="10" placeholder="Mensaje*"></textarea>
             </div>
             <div class="submitBtn">
-              <!-- <div class="error">
-                <p class="errorMessage">Debe ingresar un nombre</p>
-               <p class="errorMessage">El email ingresado es inválido</p>
-                <p class="errorMessage">Debe ingresar un mensaje</p> 
+              
+              <!-- Error -->
+              <!-- <div id="errorSection" class="error">
+                <p id="emailErrorMessage" class="errorMessage">El email ingresado es inválido</p>
+                <p id="messageErrorMessage" class="errorMessage">Debe ingresar un mensaje</p>
               </div> -->
+              
+              <!-- Success -->
               <!-- <div class="success">
                 <p class="successMessage">¡Mensaje enviado!</p>
               </div> -->
+
               <input class="btnSannu btnSannu__smallBtn" id="btnSubmit" type="submit" value="Enviar">
             </div>
           </form>
         </div>
         <!-- Fin Formulario -->
-      
-      
-      
-      
+
+
+
+
       </section>
     </div>
 
@@ -131,6 +135,8 @@
   <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
   </script> -->
   <script src="../../js/submit.js"></script>
+
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>

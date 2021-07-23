@@ -6,6 +6,31 @@
   .container__contacto {
     justify-content: space-between;
     width: 100%;
+    .mapSection {
+      @media (min-width: 992px) and (max-width: 1200px) {
+        overflow: hidden;
+      }
+      @media (min-width: 1200px) and (max-width: 1400px) {
+        overflow: hidden;
+      }
+      @media (min-width: 1400px) {
+        overflow: hidden;
+        max-height: 762px;
+      }
+    }
+    @media (max-width: 576px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      flex-direction: row;
+    }
   }
   .form__container {
     display: flex;
@@ -14,6 +39,9 @@
     flex-direction: column;
     .contact__text {
       text-align: center;
+      @media (max-width: 576px) {
+        padding: 10px 30px;
+      }
     }
     .sannuTitulos--contactInfo {
       font-size: 30px;
@@ -34,11 +62,15 @@
 
     .form {
       padding: 10px;
-      text-align: center;
-
+      input,
+      textarea {
+        color: $typography_color;
+        font-family: $principal_typography;
+        font-weight: 300;
+        font-size: 14px;
+      }
       .inputNameAndEmail {
         width: 437px;
-
         .input__singleBox {
           width: 100%;
           border-radius: 10px;
@@ -54,23 +86,23 @@
             font-weight: 300;
           }
         }
-
         input:focus,
         textarea:focus {
           outline: none;
         }
-
         .errorValidation {
           border: 2px solid red;
+          color: $background_color_error;
           &::placeholder {
             color: red !important;
           }
         }
+        @media (max-width: 576px) {
+          width: 100%;
+        }
       }
-
       .inputTextArea {
         width: 437px;
-
         .input__textAreaBox {
           width: 100%;
           border-radius: 10px;
@@ -81,6 +113,7 @@
           font-size: 15px;
           font-family: $principal_typography;
           font-weight: 300;
+          resize: none;
           &::placeholder {
             color: $background_color;
             opacity: 1;
@@ -89,10 +122,13 @@
             font-weight: 300;
           }
         }
+        @media (max-width: 576px) {
+          width: 100%;
+        }
       }
       .submitBtn {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         .error {
           font-size: 15px;
@@ -108,9 +144,16 @@
             width: 299px;
             height: 33px;
             background-color: $background_color_error;
+            @media (max-width: 576px) {
+              width: auto;
+            }
           }
           p {
-            margin-bottom: 0;
+            margin: 0;
+          }
+          @media (max-width: 576px) {
+            margin-bottom: 10px;
+            width: 100%;
           }
         }
         .success {
@@ -127,11 +170,54 @@
             width: 299px;
             height: 33px;
             background-color: $background_color_success;
+            @media (max-width: 576px) {
+              width: auto;
+            }
+            @media (min-width: 576px) and (max-width: 768px) {
+              width: auto;
+            }
+            @media (min-width: 768px) and (max-width: 992px) {
+              width: auto;
+            }
           }
           p {
             margin-bottom: 0;
           }
+          @media (max-width: 576px) {
+            margin-bottom: 10px;
+            width: 100%;
+          }
+          @media (min-width: 576px) and (max-width: 768px) {
+            margin-bottom: 10px;
+            width: 100%;
+          }
+          @media (min-width: 768px) and (max-width: 992px) {
+            margin-bottom: 10px;
+            width: 100%;
+          }
         }
+        @media (max-width: 576px) {
+          flex-direction: column;
+          margin: 10px 0;
+        }
+        @media (min-width: 576px) and (max-width: 768px) {
+          flex-direction: column;
+          margin: 10px 0;
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+          flex-direction: column;
+          margin: 10px 0;
+        }
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          justify-content: space-between;
+        }
+        @media (min-width: 1400px) {
+          justify-content: space-between;
+        }
+      }
+      @media (max-width: 576px) {
+        width: 100%;
+        padding: 10px 30px;
       }
     }
     .inputs--disable {
@@ -142,8 +228,27 @@
       cursor: not-allowed;
       pointer-events: none;
     }
+    @media (max-width: 576px) {
+      margin-bottom: 20px;
+    }
   }
   .peruLimaMap {
     width: 710px;
+    @media (max-width: 576px) {
+      width: 100%;
+    }
+    @media (min-width: 576px) and (max-width: 768px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      width: 100%;
+    }
+    @media (min-width: 992px) and (max-width: 1200px) {
+      width: 710px;
+      transform: translateX(-50px);
+    }
+    @media (min-width: 1400px) {
+      width: 100%;
+    }
   }
 }
