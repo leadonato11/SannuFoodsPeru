@@ -367,6 +367,10 @@ body {
   @media (min-width: 992px) and (max-width: 1200px) {
     .main__nosotros {
       min-height: 585px; } }
+  @media (min-width: 1200px) and (max-width: 1400px) {
+    .main__nosotros {
+      min-height: 585px;
+      padding: 50px; } }
   @media (min-width: 1400px) {
     .main__nosotros {
       min-height: 762px; } }
