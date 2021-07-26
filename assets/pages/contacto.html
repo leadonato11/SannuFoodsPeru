@@ -74,12 +74,12 @@
           <form id="form">
             <input class="form-control" type="hidden" name="subject" value="Sannu Foods">
             <div class="inputNameAndEmail">
-              <input class="input__singleBox" id="nombre" type="text" name="full-name" placeholder="Nombre*">
-              <input class="input__singleBox" id="email" name="email" type="email" placeholder="Mail*">
+              <input class="input__singleBox" id="nombre" type="text" name="full-name" placeholder="Nombre*" required>
+              <input class="input__singleBox" id="email" name="email" type="email" placeholder="Mail*" required>
             </div>
             <div class="inputTextArea">
               <textarea class="input__textAreaBox" id="message" cols="30" rows="10" name="message"
-                placeholder="Mensaje*"></textarea>
+                placeholder="Mensaje*" maxlength="200" required></textarea>
             </div>
             <div class="submitBtn">
               <input class="btnSannu btnSannu__smallBtn" id="btnSubmit" type="submit" value="Enviar">
